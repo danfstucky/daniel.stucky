@@ -1,0 +1,6 @@
+#content
+  %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    %button.btn.btn-info#sidebarCollapse{type: 'button'}
+      = fa_icon 'angle-double-left', class: 'hide-sidebar-icon'
+      %span.hide-sidebar-text= 'Hide Sidebar'
+  = yield

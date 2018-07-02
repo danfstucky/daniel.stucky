@@ -5,7 +5,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1.1'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'duktape'
+#gem 'duktape'
+gem 'font-awesome-rails', '~> 4.7'
 gem 'haml', '~> 5.0.4'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3.3'

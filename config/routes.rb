@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'overview#home'
+  root 'overview#about_me'
 end

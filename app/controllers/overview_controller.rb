@@ -1,10 +1,12 @@
 class OverviewController < ApplicationController
+
   def home
   end
 
-  def amvs
+  def about_me
+    @about_me = AboutMePresenter.new
   end
 
-  def game
+  def skills
   end
 end

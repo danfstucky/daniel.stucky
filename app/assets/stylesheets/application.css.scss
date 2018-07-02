@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ */
+
+@import 'bootstrap';
+@import "font-awesome";
+
+// Variables
+$gutter: 10px;
+$active_element: #1E6CA7;
+
+.flex-wrapper {
+  display: flex;
+  width: 100%;
+
+  #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+
+    .sidebar-header {
+      text-align: center;
+      background: #647ada;
+      padding: $gutter * 2;
+    }
+
+    li {
+      text-align: left;
+      padding: $gutter;
+      border-bottom: 1px solid rgb(92, 93, 94);
+
+      &:hover {
+        font-weight: bold;
+        cursor: pointer;
+        background: rgb(58, 101, 136);
+      }
+    }
+    li.active {
+      background: $active_element;
+    }
+  }
+
+  #sidebar.hide-sidebar {
+    margin-left: -250px;
+  }
+
+  #content {
+    width: 100%;
+    padding: $gutter;
+
+    .column {
+      // font family
+    }
+
+    .card {
+      margin: $gutter;
+    }
+
+    .column-2 {
+      flex: 2;
+    }
+
+    .column-3 {
+      flex: 3;
+    }
+
+    .about-me-card {
+      img {
+        float: left;
+        padding-right: $gutter;
+      }
+    }
+  }
+}

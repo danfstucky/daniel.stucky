@@ -1,0 +1,40 @@
+.about-me-page
+  .flex-wrapper
+    .column.column-2
+      .about-me-card.card
+        %h4.card-header= 'About Me'
+        .card-body
+          = image_tag("dan_science.png")
+          %p= @about_me.description_text
+
+      .contact-info-card.card
+        %h4.card-header= 'Contact'
+        .card-body
+          %p= fa_icon 'map-marker', text: 'Kansas City, MO'
+          %p= fa_icon 'envelope', text: 'danfstucky@gmail.com'
+
+      .education-card.card
+        %h4.card-header= 'Education'
+        .card-body
+          %ul.list-unstyled
+            %li= fa_icon 'graduation-cap', text: 'B.S. Computer Science'
+            %li.text-secondary= 'University of Missouri Kansas City (2016)'
+          %ul.list-unstyled
+            %li= fa_icon 'graduation-cap', text: 'M.S. Molecular Genetics'
+            %li.text-secondary= 'Kansas State University (2013)'
+          %ul.list-unstyled
+            %li= fa_icon 'graduation-cap', text: 'B.S. Biology'
+            %li.text-secondary= 'Truman State University (2011)'
+
+    .column.column-2
+      .skills-card.card
+        %h4.card-header= 'Skills'
+        .card-body
+          %p= 'Create a d3.js chart for this in the future.'
+          - @about_me.skills.each do |skill|
+            %p= "#{skill[:text]} - #{skill[:score]}"
+
+  .latest-project-card.card
+    %h4.card-header= 'Latest Projects'
+    .card-body
+      %p= 'Projects go here.'
