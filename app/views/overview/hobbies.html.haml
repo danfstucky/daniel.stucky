@@ -1,19 +1,34 @@
 .hobbies-page
-  %table.interests-panel
-    %tr
-      %td= image_tag("code.png")
-      %td= image_tag("chromosome.png")
-      %td= image_tag("halo.png")
-      %td= image_tag("muse.png")
-      %td= image_tag("trigun.png")
+  %table.interests-header
+    %tr.select-image-row
+      %td.active= image_tag("hiking.png", size: "125")
+      %td.inactive= image_tag("code.png", size: "125")
+      %td.inactive= image_tag("chromosome.png", size: "125")
+      %td.inactive= image_tag("halo.png", size: "125")
+      %td.inactive= image_tag("muse.png", size: "125")
+      %td.inactive= image_tag("trigun.png", size: "125")
+    %tr.select-icon-row
+      %td= fa_icon 'angle-down', class: 'fa-5x active selection-1'
+      %td= fa_icon 'angle-down', class: 'fa-5x d-none selection-2'
+      %td= fa_icon 'angle-down', class: 'fa-5x d-none selection-3'
+      %td= fa_icon 'angle-down', class: 'fa-5x d-none selection-4'
+      %td= fa_icon 'angle-down', class: 'fa-5x d-none selection-5'
+      %td= fa_icon 'angle-down', class: 'fa-5x d-none selection-6'
 
-  .panels
-    .box
+  .interests-panel
+    .selection-1.active
       %h3= 'Hiking'
-        %p= 'My girlfriend and I love going on hikes together and. Our favorite destinations are wooded mountain areas such as Colorado and the Pacific Northwest.'
-    
-    .box
-      %h3= 'Favorite Games'
+      %p= 'My girlfriend and I love going on hikes together and. Our favorite destinations are wooded mountain areas such as Colorado and the Pacific Northwest.'
+      
+    .selection-2.d-none
+      %h3= 'Programming'
+ 
+    .selection-3.d-none
+      %h3= 'Science'
+
+    .selection-4.d-none
+      %h3= 'Gaming'
+      %h5= 'Favorite Games'
       %table.games-list
         %tr
           %td= image_tag("loz.png")
@@ -27,4 +42,9 @@
           %td= image_tag("pokemon.png")
         %tr
           %td= image_tag("wow.png")
- 
+
+    .selection-5.d-none
+      %h3= 'Music'
+
+    .selection-6.d-none
+      %h3= 'Anime'

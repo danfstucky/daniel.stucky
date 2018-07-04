@@ -34,6 +34,11 @@
           - @about_me.skills.each do |skill|
             %p= "#{skill[:text]} - #{skill[:score]}"
 
+      .github-card.card
+        %h4.card-header= 'My GitHub'
+        .card-body
+          = link_to 'https://github.com/danfstucky'
+
   .latest-project-card.card
     %h4.card-header= 'Latest Projects'
     .card-body

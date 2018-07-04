@@ -82,5 +82,24 @@ $active_element: #1E6CA7;
         padding-right: $gutter;
       }
     }
+
+    .hobbies-page {
+      table.interests-header {
+        margin-left: auto;
+        margin-right: auto;
+
+        tr.select-image-row {
+          td.inactive {
+            opacity: 0.5;
+            filter: grayscale(50%);
+          }
+        }
+
+        tr.select-icon-row {
+          color: $active_element;
+          text-align: center;
+        }
+      }
+    }
   }
 }

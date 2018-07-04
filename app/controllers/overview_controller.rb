@@ -7,6 +7,6 @@ class OverviewController < ApplicationController
     @about_me = AboutMePresenter.new
   end
 
-  def skills
+  def hobbies
   end
 end
