@@ -38,6 +38,7 @@ $active_element: #1E6CA7;
 
     li {
       text-align: left;
+      color: #fff;
       padding: $gutter;
       border-bottom: 1px solid rgb(92, 93, 94);
 
@@ -81,6 +82,10 @@ $active_element: #1E6CA7;
         float: left;
         padding-right: $gutter;
       }
+    }
+
+    .unstyled-link {
+      text-decoration: none;
     }
 
     .hobbies-page {

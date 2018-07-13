@@ -4,8 +4,12 @@
     %h6= 'Software Engineer'
 
   %ul.list-unstyled.components
-    %li.active= 'Who I Am'
+    = link_to root_path do
+      %li{class: ('active' if @active_page == NAV_OPTIONS[:about_me])}= 'Who I Am'
     %li= 'Resume'
-    %li= 'Personal Projects'
-    %li= 'Science Background'
-    %li= 'Hobbies'
+    = link_to overview_projects_path do
+      %li{class: ('active' if @active_page == NAV_OPTIONS[:projects])}= 'Personal Projects'
+    = link_to overview_science_path do
+      %li{class: ('active' if @active_page == NAV_OPTIONS[:science])}= 'Biology Research'
+    = link_to overview_hobbies_path do
+      %li{class: ('active' if @active_page == NAV_OPTIONS[:hobbies])}= 'Hobbies'
