@@ -106,5 +106,11 @@ $active_element: #1E6CA7;
         }
       }
     }
+
+    .projects-page {
+      #poke-carousel {
+        width: 500px; // Set carousel size to same width of images.
+      }
+    }
   }
 }
