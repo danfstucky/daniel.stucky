@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on('turbolinks:load', function() {
 
   // Selected images are colored and inactive images are grayscale.
   $(".select-image-row td").click( function() {

@@ -16,6 +16,7 @@
 
 // Variables
 $gutter: 10px;
+$half_gutter: $gutter / 2;
 $active_element: #1E6CA7;
 
 .flex-wrapper {
@@ -63,6 +64,7 @@ $active_element: #1E6CA7;
 
     .column {
       // font family
+      padding: 0px $gutter;
     }
 
     .card {
@@ -105,11 +107,27 @@ $active_element: #1E6CA7;
           text-align: center;
         }
       }
+
+      .interests-panel {
+        h3 {
+          padding: $half_gutter;
+          text-align: center;
+        }
+      }
     }
 
     .projects-page {
       #poke-carousel {
         width: 500px; // Set carousel size to same width of images.
+      }
+
+      table.smite-spec-images {
+        float: right;
+
+        img {
+          height: 70%;
+          padding: $gutter;
+        }
       }
     }
   }

@@ -17,17 +17,25 @@
 
   .interests-panel
     .selection-1.active
-      %h3= 'Hiking'
+      %h3.bg-light= 'Hiking'
       %p= 'My girlfriend and I love going on hikes together and. Our favorite destinations are wooded mountain areas such as Colorado and the Pacific Northwest.'
       
     .selection-2.d-none
-      %h3= 'Programming'
- 
+      %h3.bg-light= 'Programming'
+      .flex-wrapper
+        .column.column-3
+          %p= "I got off to a later start than most when it comes to my programming career due to my studies in genetics, but I have not looked back since making the switch. I devote a good chunk of my free time to working on personal coding projects of my choosing. These range from fun games I play and share with others, to more practical uses that aid me in some purpose. A list of my more recent endeavors can be found on the Personal Projects page of this site.\nI prefer working with higher-level languages when able since progress is often much quicker. I am always looking to learn new technologies and expand my knowledge!"
+        .column
+          %h5= 'Favorite Languages'
+          = image_tag("tech_icons/ruby-icon.png")
+          = image_tag("tech_icons/python-icon.png")
+          = image_tag("tech_icons/js-icon.png")
+
     .selection-3.d-none
-      %h3= 'Science'
+      %h3.bg-light= 'Science'
 
     .selection-4.d-none
-      %h3= 'Gaming'
+      %h3.bg-light= 'Gaming'
       %h5= 'Favorite Games'
       %table.games-list
         %tr
@@ -44,7 +52,7 @@
           %td= image_tag("wow.png")
 
     .selection-5.d-none
-      %h3= 'Music'
+      %h3.bg-light= 'Music'
 
     .selection-6.d-none
-      %h3= 'Anime'
+      %h3.bg-light= 'Anime'

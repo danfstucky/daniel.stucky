@@ -1,5 +1,5 @@
-$(document).ready(function () {
-
+$(document).on('turbolinks:load', function() {
+  console.log('webapp load');
   $('#sidebarCollapse').on('click', function () {
     let $buttonText = $('.hide-sidebar-text');
 
@@ -9,4 +9,4 @@ $(document).ready(function () {
       $buttonText.text() === 'Hide Sidebar' ? 'Show Sidebar' : 'Hide Sidebar'
     );
   });
-});
+})
