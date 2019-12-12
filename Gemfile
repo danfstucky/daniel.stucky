@@ -10,7 +10,7 @@ gem 'font-awesome-rails', '~> 4.7'
 gem 'haml', '~> 5.1.1'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3.3'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'rails', '~> 5.2.3'
 gem 'sass-rails', '~> 5.0'
 # Use sqlite3 as the database for Active Record
